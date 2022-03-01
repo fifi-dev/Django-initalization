@@ -73,6 +73,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'course.wsgi.application'
+ASGI_APPLICATION = 'course.asgi.application'
 
 
 # Database
@@ -129,3 +130,14 @@ STATICFILES_DIRS = [
   "../santaHood/static",
 
 ]
+
+#Here, we let channels_redis know where the Redis server is located.
+
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels_redis.core.RedisChannelLayer',
+        'CONFIG': {
+            "hosts": [('127.0.0.1', 6379)],
+        },
+    },
+}
