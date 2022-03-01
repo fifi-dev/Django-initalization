@@ -1,0 +1,63 @@
+{% load static %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'santaHood/css/buttons.css' %}"
+/>
+
+{% load static %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'santaHood/css/main.css' %}"
+/>
+
+{% load static %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'santaHood/css/detail.css' %}"
+/>
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+/>
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<div class="wrapper">
+  <div class="product-img">
+    <img
+      src="{% static 'santaHood/img/chevalier.png' %}"
+      alt="{{ data.alt }}"
+    />
+  </div>
+  <div class="product-info">
+    <div class="product-text">
+      <h1>{{ data.name }}</h1>
+      <p>{{ data.description }}</p>
+    </div>
+    <div class="product-price-btn">
+      <p><span>{{ data.price }}</span>€</p>
+      <div class="product-cta">
+        <button class="cart-button">
+          <span class="add-to-cart"> <i class="fas fa-cart-plus"></i></span>
+          <span class="added"><i class="fas fa-check-circle"></i></span>
+          <i class="fas fa-shopping-cart"></i>
+          <i class="fas fa-box"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script
+  src="{% static 'santaHood/js/script.js' %}"
+  type="text/javascript"
+></script>
