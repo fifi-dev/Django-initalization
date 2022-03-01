@@ -1,0 +1,23 @@
+{% load static %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'santaHood/css/main.css' %}"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'santaHood/css/forms.css' %}"
+/>
+
+<div class="formContainer">
+  <form method="POST" enctype="multipart/form-data">
+    <!-- Security token -->
+    {% csrf_token %}
+
+    <!-- Using the formset -->
+    {{ form.as_p }}
+
+    <input type="submit" value="Ajouter" />
+  </form>
+</div>
