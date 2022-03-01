@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'santaHood.apps.SantahoodConfig',
     'chat.apps.ChatConfig',
+    'channels', 
 
 ]
 
