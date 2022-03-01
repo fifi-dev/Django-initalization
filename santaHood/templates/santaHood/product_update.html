@@ -1,0 +1,7 @@
+<h1>Hello</h1>
+<form method="POST" action="update">
+  <!-- Security token by Django -->
+  {% csrf_token %}
+  <input type="number" name="quantity" />
+  <input type="submit" value="Acheter" />
+</form>

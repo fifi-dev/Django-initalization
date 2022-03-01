@@ -7,7 +7,7 @@ from .models import Product
 def index(request):
   return render(request, 'santaHood/index.html')
 
-from .forms import ProductForm
+from .forms import *
 
 def add_product(request):
     context ={}
@@ -35,3 +35,20 @@ def shop(request):
   context ={}
   context["dataset"] = Product.objects.all()
   return render(request, 'santaHood/shop.html', context)
+
+def update_quantity(request,slug):
+    context = {}
+
+    obj = get_object_or_404(Product, slug = slug)
+
+    form = QuantityForm(request.POST)
+    if form.is_valid():
+        obj.quantity-=form.cleaned_data['quantity']
+        if obj.quantity < 0:
+          return HttpResponseRedirect("/shop/"+slug)
+        obj.save()
+        return HttpResponseRedirect("/shop/"+slug)
+
+    context["form"] = form
+
+    return render(request, "santaHood/product_update.html", context)
