@@ -1,0 +1,127 @@
+{% load static %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'santaHood/css/home.css' %}"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'santaHood/css/main.css' %}"
+/>
+
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'santaHood/css/buttons.css' %}"
+/>
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+/><link rel="stylesheet" href="./style.css" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!--header-->
+<header class="header">
+  <h1>Header</h1>
+</header>
+
+<div class="main">
+  <h1>My shop</h1>
+  <ul class="cards">
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image">
+          <img
+            src="{% static 'santaHood/img/chevalier.png' %}"
+            alt="My image"
+          />
+        </div>
+        <div class="card_content">
+          <h2 class="card_title">Card Grid Layout</h2>
+          <p class="card_text">
+            Demo of pixel perfect pure CSS simple responsive card grid layout
+          </p>
+          <div class="card_cta">
+            <p>115$</p>
+            <button class="cart-button">
+              <span class="add-to-cart"> <i class="fas fa-cart-plus"></i></span>
+              <span class="added"><i class="fas fa-check-circle"></i></span>
+              <i class="fas fa-shopping-cart"></i>
+              <i class="fas fa-box"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image">
+          <img src="https://picsum.photos/500/300/?image=11" />
+        </div>
+        <div class="card_content">
+          <h2 class="card_title">Card Grid Layout</h2>
+          <p class="card_text">
+            Demo of pixel perfect pure CSS simple responsive card grid layout
+          </p>
+          <button class="btn card_btn">Read More</button>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image">
+          <img src="https://picsum.photos/500/300/?image=14" />
+        </div>
+        <div class="card_content">
+          <h2 class="card_title">Card Grid Layout</h2>
+          <p class="card_text">
+            Demo of pixel perfect pure CSS simple responsive card grid layout
+          </p>
+          <button class="btn card_btn">Read More</button>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image">
+          <img src="https://picsum.photos/500/300/?image=17" />
+        </div>
+        <div class="card_content">
+          <h2 class="card_title">Card Grid Layout</h2>
+          <p class="card_text">
+            Demo of pixel perfect pure CSS simple responsive card grid layout
+          </p>
+          <button class="btn card_btn">Read More</button>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image">
+          <img src="https://picsum.photos/500/300/?image=2" />
+        </div>
+        <div class="card_content">
+          <h2 class="card_title">Card Grid Layout</h2>
+          <p class="card_text">
+            Demo of pixel perfect pure CSS simple responsive card grid layout
+          </p>
+          <button class="btn card_btn">Read More</button>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<h3 class="made_by">Made with ♡</h3>
+
+<script
+  src="{% static 'santaHood/js/script.js' %}"
+  type="text/javascript"
+></script>
