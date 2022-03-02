@@ -1,14 +1,15 @@
 # Django-initalization
-<p align='center'> <img src="https://i.ibb.co/cJ70Xkw/talkative.png" height="80" alt="talkative" border="0"> </p>
+<p align='center'> <img src="https://i.ibb.co/Nt69GbB/chappy.png" alt="chappy" height="80" border="0"> </p>
 
 ## 💼 The project
 
 #### 📝 Description :
 
-Talkative is a chat app that allows the user to chat online with their friends or family once connected.
+chappy is a Django multiapp who allow user to shop christmas themed product and chat with connected users.
 
 #### 💡 Features :
 
+- Shop (listing & incrementing)
 - Authentifiation
 - Online Chat
 - Connected & disconnected status
@@ -35,38 +36,106 @@ for the database:
 
 - [ ] Python 3 `https://nodejs.org/en/download/ ` 
 
-- [ ] Redis `https://nodejs.org/en/download/ ` 
+- [ ] Docker desktop `https://nodejs.org/en/download/ ` 
 
-- [ ] Python 3
+- [ ] DB Browser for SQLite
   
 - [ ] Pillow
 
 ```sh
-   pip install Pillow
+   pip3 install Pillow
    ```
-   
+
+- [ ] Channels_redis 3.3.1
+
+```sh
+  pip3 install channels_redis==3.3.1
+   ```
+
 
 #### 💾 Installation :
 
 - [ ] Clone the repo :
 
   ```sh
-     git clone https://github.com/IIM-Creative-Technology/node-project.git
+     git clone https://github.com/fifi-dev/Django-initalization.git
      ```
 
-- [ ] Install the packages
+- [ ] Open Docker desktop
+
+- [ ] Run the Redis Container
 
    ```sh
-   npm install
+   docker run -p 6379:6379 -d redis:5
    ```
 
 - [ ] run the project
 
   ```sh
-     npm run dev
+     python3 manage.py runserver
      ```
    
 
+### Folder Structure
+
+    .
+    ├── chat                    # Test files (alternatively `spec` or `tests`)
+    │   ├── migrations          # Load and stress tests
+    │   ├── static                    # Test files (alternatively `spec` or `tests`)
+    │   ├── templates                    # Test files (alternatively `spec` or `tests`)  
+    │   ├── admin.py   
+    │   ├── apps.py
+    │   ├── consumers.py
+    │   ├── models.py
+    │   ├── routing.py
+    │   ├── tests.py
+    │   ├── urls.py
+    │   ├── views.py
+    ├── course                    # Test files (alternatively `spec` or `tests`)
+    │   ├── asgi.py          # Load and stress tests
+    │   ├── settings.py         # End-to-end, integration tests (alternatively `e2e`)
+    │   └── urls.py                # Unit tests
+    │   └── wsgi.py                # Unit tests
+    ├── firstApp                    # Test files (alternatively `spec` or `tests`)
+    │   ├── migrations          # Load and stress tests
+    │   ├── static                    # Test files (alternatively `spec` or `tests`)
+    │   ├── templates                    # Test files (alternatively `spec` or `tests`)  
+    │   ├── admin.py   
+    │   ├── apps.py
+    │   ├── forms.py
+    │   ├── models.py
+    │   ├── tests.py
+    │   ├── urls.py
+    │   ├── views.py 
+    ├── santaHood                    # Test files (alternatively `spec` or `tests`)
+    │   ├── migrations          # Load and stress tests
+    │   ├── static                    # Test files (alternatively `spec` or `tests`)
+    │   ├── templates                    # Test files (alternatively `spec` or `tests`)  
+    │   ├── admin.py   
+    │   ├── apps.py
+    │   ├── forms.py
+    │   ├── models.py
+    │   ├── tests.py
+    │   ├── urls.py
+    │   ├── views.py 
+    ├── db.sqlite3
+    ├── db.sqlite3-journal
+    ├── manage.py
+    └── README.md
+
+### Admin
+
+- id
+
+```sh
+   superuser
+   ```
+
+- password
+
+```sh
+   12345678
+   ```
 
 #### 🤝 Contributing :
 
@@ -84,16 +153,8 @@ Contributions are what make the open source community such an amazing place to l
 
 
 - BAZANA NTOMO Fideline `https://github.com/fifi-dev`
-- DENKEY DANDJEIN Dona `https://github.com/Dona-dky`
-
-
 
 
 ## 📜 Licence
  <a align="center"  rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>
 
-
-
-
-superuser
-12345678
