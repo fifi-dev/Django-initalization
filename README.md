@@ -75,7 +75,7 @@ for the database:
      ```
    
 
-### Folder Structure
+####  🔬 Folder Structure
 
     .
     ├── chat                    # Test files (alternatively `spec` or `tests`)
@@ -122,7 +122,7 @@ for the database:
     ├── manage.py
     └── README.md
 
-### Admin
+#### 🗝 Admin
 
 - id
 
