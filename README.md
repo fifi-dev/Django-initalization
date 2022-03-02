@@ -1,4 +1,3 @@
-# Django-initalization
 <p align='center'> <img src="https://i.ibb.co/Nt69GbB/chappy.png" alt="chappy" height="80" border="0"> </p>
 
 ## 💼 The project
